@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Nazish Bashir - Portfolio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body{font-family:Arial;background:#f5f7fb;margin:0;padding:20px}
+.card{background:white;padding:20px;border-radius:15px;box-shadow:0 4px 10px rgba(0,0,0,0.1);margin-bottom:20px}
+h1{color:#0a1f3f} h2{color:#d4af37}
+button{background:#0a1f3f;color:white;padding:10px 15px;border:none;border-radius:8px}
+input{padding:8px;width:45%;margin:5px;border:1px solid #ccc;border-radius:5px}
+</style>
+</head>
+<body>
+<div class="card">
+<h1>Nazish Bashir</h1>
+<p>Shopify & WordPress Developer | Chinese HSK | BS Zoology UAF</p>
+<p>Lahore, Punjab - Seeking Paid Remote Internship</p>
+</div>
+
+<div class="card">
+<h2>BMI Calculator - Rozana Use</h2>
+<input id="h" placeholder="Height cm"><input id="w" placeholder="Weight kg">
+<button onclick="calc()">Calculate</button>
+<p id="res"></p>
+</div>
+
+<div class="card">
+<h2>My Skills</h2>
+<p>✅ HTML, CSS, JavaScript, Bootstrap</p>
+<p>✅ WordPress, Elementor, WooCommerce</p>
+<p>✅ Chinese to English/Urdu Translation</p>
+</div>
+
+<script>
+function calc(){
+let height=document.getElementById('h').value/100;
+let weight=document.getElementById('w').value;
+let bmi=(weight/(height*height)).toFixed(1);
+document.getElementById('res').innerText="Aapka BMI hai: "+bmi;
+}
+</script>
+</body>
+</html>
